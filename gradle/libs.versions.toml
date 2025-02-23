@@ -15,6 +15,7 @@ compose-bom = "2025.02.00"
 nav-version = "2.8.7"
 hilt-viewmodel = "1.2.0"
 retrofit = "2.11.0"
+mockito = "5.8.0"
 
 [libraries]
 compose-bom = { module = "androidx.compose:compose-bom", name = "compose-bom", version.ref = "compose-bom" }
@@ -40,6 +41,9 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version = "4.12.0" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito"}
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version = "5.4.0"}
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version = "1.10.1"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
