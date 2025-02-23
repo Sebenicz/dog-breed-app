@@ -1,18 +1,21 @@
-package pl.wp.dogs
+package pl.wp.dogs.ui
 
 import android.os.Bundle
+import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.material3.MaterialTheme
 import dagger.hilt.android.AndroidEntryPoint
-import pl.wp.dogs.breeds_list.BreedsListStarter
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    @Inject
-    lateinit var breedsListStarter: BreedsListStarter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        breedsListStarter.start(supportFragmentManager)
+        setContent {
+            MaterialTheme {
+                MainScreen()
+            }
+
+        }
     }
 }

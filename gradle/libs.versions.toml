@@ -13,7 +13,9 @@ activity = "1.10.0"
 constraintlayout = "2.2.0"
 hilt = "2.51.1"
 compose-bom = "2025.02.00"
-
+nav-version = "2.8.7"
+hilt-viewmodel = "1.2.0"
+retrofit = "2.11.0"
 
 [libraries]
 compose-bom = { module = "androidx.compose:compose-bom", name = "compose-bom", version.ref = "compose-bom" }
@@ -21,10 +23,14 @@ androidx-activity-compose = { module = "androidx.activity:activity-compose", ver
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 androidx-material3 = { module = "androidx.compose.material3:material3" }
+androidx-navigation = { module = "androidx.navigation:navigation-compose", name = "androidx-navigation", version.ref = "nav-version" }
+androidx-hilt-viewmodel = { module = "androidx.hilt:hilt-navigation-compose", name = "androidx-hilt-viewmodel", version.ref = "hilt-viewmodel" }
 androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", name = "converter-gson", version.ref = "retrofit" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
