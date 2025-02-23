@@ -18,6 +18,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
 rootProject.name = "WP Dogs"
 include(":app")
